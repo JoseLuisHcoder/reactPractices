@@ -15,9 +15,9 @@ const CharacterId = () => {
   return (
     <div>
         <span>
-            <img src={characterId.image} alt="" />
+            <img src={characterId?.image} alt="" />
         </span>
-      <h1>{characterId.name}</h1>
+      <h1>{characterId?.name}</h1>
     </div>
   )
 }
