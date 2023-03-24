@@ -18,8 +18,8 @@ const Form = ({createNewUSer, updateInfo, updateById, setUptdateInfo}) => {
             
         }
         reset({
-            first_name:"",
-            last_name:"",
+            firstName:"",
+            lastName:"",
             email:"",
             password:"",
             birthday:""
@@ -30,12 +30,12 @@ const Form = ({createNewUSer, updateInfo, updateById, setUptdateInfo}) => {
     <form onSubmit={handleSubmit(handleCreate)} >
         <ul>
             <li>
-                <label htmlFor="first_name">FirstName </label>
-                <input {...register('first_name')}id = "first_name" type="text" placeholder='enter your firstname' />
+                <label htmlFor="firstName">FirstName </label>
+                <input {...register('firstName')}id = "firstName" type="text" placeholder='enter your firstname' />
             </li>
             <li>
-                <label htmlFor="last_name">LasttName </label>
-                <input {...register('last_name')}id = "last_name" type="text" placeholder='enter your lastname' />
+                <label htmlFor="lastName">LasttName </label>
+                <input {...register('lastName')}id = "lastName" type="text" placeholder='enter your lastname' />
             </li>
             <li>
                 <label htmlFor="email">Email  </label>

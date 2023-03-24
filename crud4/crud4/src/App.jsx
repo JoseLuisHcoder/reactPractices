@@ -12,33 +12,33 @@ function App() {
   const [updateInfo, setUptdateInfo] = useState()
 
   const getAllUsers = () =>{
-    const url = 'https://users-crud.academlo.tech/users/'
+    const url = 'https://crudusers.onrender.com/api/v1/users'
     axios.get(url)
       .then(res => setUsers(res.data))
       .catch(err => console.log(err))
   }
-
+console.log(users);
 useEffect(() => {
   getAllUsers()
 }, [])
 
 const createNewUSer = data => {
-  const url = 'https://users-crud.academlo.tech/users/'
+  const url = 'https://crudusers.onrender.com/api/v1/users'
   axios.post(url, data)
     .then(res => getAllUsers())
     .catch(err => console.log(err))
 }
 
 const deleteById = id => {
-  const url = `https://users-crud.academlo.tech/users/${id}`
+  const url = `https://crudusers.onrender.com/api/v1/users/${id}`
   axios.delete(url)
     .then(res => getAllUsers())
     .catch(err => console.log(err))
 
 } 
  const updateById = (id, data) => {
-    const url = `https://users-crud.academlo.tech/users/${id}/`
-    axios.put(url, data)
+    const url = `https://crudusers.onrender.com/api/v1/users/${id}/`
+    axios.patch(url, data)
       .then(res => getAllUsers())
       .catch(err => console.log(err))
  }

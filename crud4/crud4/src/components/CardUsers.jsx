@@ -4,7 +4,7 @@ const CardUsers = ({user, deleteById, setUptdateInfo}) => {
     return(
         <div>
            <ul>
-            <li><span>Nombre: </span> {user.first_name} {user.last_name}</li>
+            <li><span>Nombre: </span> {user.firstName} {user.lastName}</li>
             <li>Email: {user.email}</li>
             <li>Birthday: {user.birthday}</li>
            </ul>
