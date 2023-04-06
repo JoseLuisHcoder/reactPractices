@@ -13,7 +13,7 @@ const pokemonCard = ({url}) => {
             .catch(err => console.log(err))
     }, [])
     const handleNavigatePokemonDetail= () => navigate(`/pokedex/${pokemon.name}`)
-   
+   console.log(pokemon);
   return (
     <article onClick={handleNavigatePokemonDetail}>
     <header>

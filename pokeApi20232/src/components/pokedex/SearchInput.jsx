@@ -2,7 +2,7 @@ import React from 'react'
 
 const SearchInput = ({setPokeSearch}) => {
     const handleSubmit = e => {
-        setPokeSearch(e.target.searchText.value.trim())
+        setPokeSearch(e.target.searchText.value.trim().toLowerCase())
     }
   return (
     <div>
