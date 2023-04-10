@@ -1,70 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700&display=swap');
-:root {
-	--padding-mobile: 20px;
-	--padding-table: 50px;
-	--padding-table: 100px;
-	--primary-color: #131921;
-	--secondary-color: #ff9900;
-	--border-color: #9996;
-	--color-primary-text: #131921;
-	--color-secondary-text: #232f3e;
-	--color-3: #ffffff;
-	--color-4: #f7f8f8;
-	--color-5: #f3a847;
-	--color-6: #f7ca00;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-* {
-	box-sizing: border-box;
-	font-family: 'Alegreya Sans', sans-serif;
-}
-html {
-	scroll-behavior: smooth;
-}
-
-img {
-	width: 100%;
-}
-body {
-	margin: 0;
-}
-h1,
-h2,
-h3,
-h4,
-p,
-ul {
-	margin-top: 0;
-	margin-bottom: 0;
-}
-ul {
-	list-style: none;
-	padding-left: 0;
-}
-a {
-	text-decoration: none;
-	color: inherit;
-}
-.home__filters {
-	display: flex;
-	justify-content: space-around;
-}
-
-.category_filter {
-	display: flex;
-	flex-direction: column;
-}
-.category_filter_ul {
-	cursor: pointer;
-}
-
-.category_filter_li:hover {
-	color: grey;
-}
-.category_filter_li {
-	cursor: pointer;
-}
-.price_filter {
-	display: flex;
-	flex-direction: column;
-}
+.active-link {
+  
+	color:var(--secondary-color);
+  }

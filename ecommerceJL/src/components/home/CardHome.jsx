@@ -23,7 +23,7 @@ const CardHome = ({ product }) => {
 	}
 	// console.log(product);
 	return (
-		<article onClick={handleClick} className='card__home'>
+		<article onClick={handleClick} className=' card__home'>
 			<header className='card__home__header'>
 				<img
 					className='card__home__img__back'
@@ -36,7 +36,7 @@ const CardHome = ({ product }) => {
 			<div className='card__home__body'>
 				<h2 className='card__home__title'>{product.title}</h2>
 				<section className='card__home__price__container'>
-					<h3 className='card__home__price__label'>Price</h3>
+					<h3 className='  card__home__price__label'>Price</h3>
 					<span className='card__home__price__number'>$ {product.price}</span>
 				</section>
 				<button onClick={handleAddCart} className='card__home__btn'>
